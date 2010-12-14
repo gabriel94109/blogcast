@@ -8,7 +8,7 @@
 <%= yield :robots %>
 <%= stylesheet_link_tag "blog" %> <%= yield :modstyles %>
 <!--<link href="images/favicon.ico" rel="Shortcut Icon" type="image/x-icon"/>-->
-<%= auto_discovery_link_tag %>
+<%= auto_discovery_link_tag :url => 'http://feeds.feedburner.com/GabrielLaden' %>
 <% if Rails.env.production? %>
 <%= javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js" %>
 <% else %>
