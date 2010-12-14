@@ -2,13 +2,13 @@
 <html><head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <title><%= yield :title %></title>
-<meta name="author" content="Blogcast"/>
+<meta name="author" content="Gabriel Laden"/>
 <meta name="description" content="<%= yield :description %>"/>
 <%= csrf_meta_tag %>
 <%= yield :robots %>
 <%= stylesheet_link_tag "blog" %> <%= yield :modstyles %>
 <!--<link href="images/favicon.ico" rel="Shortcut Icon" type="image/x-icon"/>-->
-<%= auto_discovery_link_tag(:rss, "#") %>
+<%= auto_discovery_link_tag %>
 <% if Rails.env.production? %>
 <%= javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js" %>
 <% else %>
@@ -57,7 +57,7 @@
 
 <div class="footer">
 	<p>
-		Content copyright © 2010 <a href="#">Company, LLC</a>.
+		Content copyright © 2010 <a href="#">Gabriel Laden</a>.
 		<span>Powered by <a href="http://techoctave.com/blogcast">Blogcast</a></span>
 	</p>
 </div><!-- footer -->
