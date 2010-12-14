@@ -53,8 +53,8 @@ module Blogcast
     #Akismet (http://akismet.com/) is a collaborative spam filtering service. 
     #Rakismet is easy Akismet integration with Rails and rack apps. 
     #TypePad's AntiSpam service and generic Akismet endpoints are supported.
-    config.rakismet.key  = 'Your Akismet Key'
-    config.rakismet.url  = 'http://example-domain.com/blog'
+    config.rakismet.key  = '995cae2040d7'
+    config.rakismet.url  = 'http://gabriel.heroku.com/'
     config.rakismet.host = 'rest.akismet.com'
   end
 end
